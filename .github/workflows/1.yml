@@ -23,6 +23,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Checkout
+        uses: actions/checkout@dev-19.07
+        with:
+          ref: dev-19.07
+
       - name: Space cleanup
         env:
           DEBIAN_FRONTEND: noninteractive
